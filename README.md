@@ -4,11 +4,16 @@ My Neovim Config
 
 ## Installation
 ```
+## save previous config
+mv ~/.config/nvim ~/.config/nvim.bak
+cp -r ~/.config/nvim.bak ~/.config/nvim
+
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-git clone https://github.com/UTFeight/vimacs
+git clone https://github.com/iliutaadrian/Neovim-Config
 cd vimacs && mv custom ~/.config/nvim/lua/custom
 cd .. && rm -rf vimacs && nvim
 ```
+
 
 ## Based on
 ```
