@@ -21,6 +21,9 @@ https://github.com/NvChad/NvChad
 https://github.com/UTFeight/vimacs
 ```
 
+## Session start 
+![Screenshot 2023-10-31 at 10 39 00](https://github.com/iliutaadrian/Neovim-Config/assets/11472785/a9bb8f1c-6d72-4811-aec4-cb98df075525)
+
 ## Telescope Fuzzy Finder
 ![Screenshot 2023-10-31 at 10 23 28](https://github.com/iliutaadrian/Neovim-Config/assets/11472785/3913c298-a2c6-4e3e-a3a2-7d6a1d9007f8)
 
