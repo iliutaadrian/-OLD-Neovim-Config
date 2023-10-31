@@ -2630,44 +2630,6 @@ local plugins = {
   },
 
   {
-    "madskjeldgaard/cppman.nvim",
-
-    dependencies = {
-      {
-        "MunifTanjim/nui.nvim",
-      },
-    },
-
-    cmd = {
-      "CPPMan",
-    },
-
-    keys = {
-      {
-        "<leader>fd",
-        function()
-          require("cppman").open_cppman_for(vim.fn.expand "<cword>")
-        end,
-        mode = "n",
-        desc = "Open Cpp Manual",
-      },
-
-      {
-        "<leader>fx",
-        function()
-          require("cppman").input()
-        end,
-        mode = "n",
-        desc = "Search Cpp Manual",
-      },
-    },
-
-    config = function()
-      require("cppman").setup()
-    end,
-  },
-
-  {
     "sindrets/winshift.nvim",
 
     keys = {

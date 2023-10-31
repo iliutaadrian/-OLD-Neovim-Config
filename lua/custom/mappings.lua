@@ -22,6 +22,10 @@ M.general = {
       ":OrganizeImports<CR>",
       "Optimize Imports",
     },
+    ["<leader>fx"] = {
+      [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+      "Replace word",
+    },
   },
 }
 
