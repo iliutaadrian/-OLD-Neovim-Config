@@ -152,14 +152,25 @@ local plugins = {
   --   opts = require("custom.configs.copilot").opts,
   -- },
   {
-    'exafunction/codeium.vim',
-    event = 'BufEnter',
+    "exafunction/codeium.vim",
+    event = "BufEnter",
   },
-  -- C++ development
-  -- Nice but limited cpp codegen features which I'll (probably) not use (if you want create keymapps)
   {
-    "mhinz/vim-startify",
+    "sindrets/diffview.nvim",
+    event = "BufEnter",
+    keys = {
+      { "<leader>gd", ":DiffviewOpen<CR>", mode = "n", desc = "Diiff view open" },
+      { "<leader>gf", ":DiffviewFileHistory %<CR>", mode = "n", desc = "File history" },
+    },
+    config = function()
+      require("diffview").setup() 
+    end,
   },
+  {
+    "tpope/vim-fugitive",
+    event = "BufEnter",
+  }, -- C++ development
+  -- Nice but limited cpp codegen features which I'll (probably) not use (if you want create keymapps)
   {
     "Badhi/nvim-treesitter-cpp-tools",
 
@@ -1646,19 +1657,6 @@ local plugins = {
 
     cmd = "MdEval",
     keys = require("custom.configs.mdeval").keys,
-  },
-  --| NOTE: Could be
-  { -- Visualize git conflicts MAYBE
-    "akinsho/git-conflict.nvim",
-
-    -- TODO: Add keys
-    cmd = require("custom.configs.git-conflict").cmd,
-    opts = require("custom.configs.git-conflict").opts,
-    version = "*",
-
-    config = function(_, opts)
-      require("git-conflict").setup(opts)
-    end,
   },
 
   { -- TODO: migrate to file

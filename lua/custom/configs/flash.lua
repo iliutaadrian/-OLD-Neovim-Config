@@ -124,7 +124,7 @@ M.opts = {
     -- show the label before the match
     before = false, ---@type boolean|number[]
     -- position of the label extmark
-    style = "overlay", ---@type "eol" | "overlay" | "right_align" | "inline"
+    style = "eol", ---@type "eol" | "overlay" | "right_align" | "inline"
     -- flash tries to re-use labels that were already assigned to a position,
     -- when typing more characters. By default only lower-case labels are re-used.
     reuse = "lowercase", ---@type "lowercase" | "all" | "none"
