@@ -18,7 +18,10 @@ M.general = {
       end,
       "Save all open buffers",
     },
-
+    ["<leader>oi"] = {
+      ":OrganizeImports<CR>",
+      "Optimize Imports",
+    },
   },
 }
 
@@ -68,7 +71,6 @@ M.disabled = {
     ["<leader>th"] = "",
     ["<leader>ra"] = "",
     ["<leader>fo"] = "", -- moved: <leader>fr
-
   },
 }
 
@@ -128,7 +130,7 @@ M.buffer = {
             vim.cmd(tostring(buf.bufnr) .. "bwipeout!")
           end
         end
-        vim.cmd('e')
+        vim.cmd "e"
       end,
       "Close all buffers except current", -- Terminals are hidden
     },
@@ -243,6 +245,7 @@ M.git = {
 
 M.code = {
   v = {
+
     ["<leader>cz"] = {
       ":Telescope lsp_range_code_actions",
       "Code actions for refactoring",
