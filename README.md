@@ -30,6 +30,9 @@ https://github.com/UTFeight/vimacs
 ## Custom theme / catppucin
 ![Screenshot 2023-10-31 at 10 23 06](https://github.com/iliutaadrian/Neovim-Config/assets/11472785/a7052d03-e7e9-45af-bf25-429e94dd2b2f)
 
+## flash.nvim search/highlight
+![Screenshot 2023-10-31 at 16 41 02](https://github.com/iliutaadrian/Neovim-Config/assets/11472785/211a612a-83e4-4a1f-9d72-aed17525f7c7)
+
 ## LSP code actions: TS, PY, Ruby
 ![Screenshot 2023-10-31 at 10 24 15](https://github.com/iliutaadrian/Neovim-Config/assets/11472785/cd52d602-7660-4361-83e0-35997ac841d9)
 
