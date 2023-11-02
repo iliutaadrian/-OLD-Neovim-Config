@@ -149,6 +149,27 @@ M.sort = {
   },
 }
 
+M.lspconfig = {
+  n = {
+    ["gd"] = {
+      ":Telescope lsp_definitions<CR>",
+      "Goto Definition",
+    },
+    ["gr"] = {
+      ":Telescope lsp_references<CR>",
+      "Goto References",
+    },
+    ["gi"] = {
+      ":Telescope lsp_implementations<CR>",
+      "Goto Implementation",
+    },
+    ["<leader>rd"] = {
+      ":LspRestart<CR>",
+      "Restart LSP Server",
+    },
+  },
+}
+
 M.nvterm = {
   n = {
     ["<leader>hh"] = {
@@ -169,7 +190,7 @@ M.nvterm = {
 
 M.selection = {
   n = {
-    ["<C-M-a>"] = { "gg0vG$", mode = "n", desc = "Select Whole Buffer" },
+    ["<C-S-a>"] = { "gg0vG$", mode = "n", desc = "Select Whole Buffer" },
   },
 }
 
