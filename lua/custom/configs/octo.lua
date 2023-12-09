@@ -94,7 +94,7 @@ M.keys = {
   {"<leader>ghno", "<cmd> Octo pr checkout<CR>", mode = "n", desc = "Checkout PR"        },
   {"<leader>ghnt", "<cmd> Octo pr close<CR>",    mode = "n", desc = "Close PR"           },
   {"<leader>ghnq", "<cmd> Octo pr list<CR>",     mode = "n", desc = "List PR"            },
-  {"<leader>ghnd", "<cmd> Octo pr diff<CR>",     mode = "n", desc = "PR Diff"            },
+  {"<eader>ghnd", "<cmd> Octo pr diff<CR>",     mode = "n", desc = "PR Diff"            },
   {"<leader>ghnz", "<cmd> Octo pr changes<CR>",  mode = "n", desc = "PR Changes"         },
   {"<leader>ghnp", "<cmd> Octo pr ready<CR>",    mode = "n", desc = "Ready PR"           },
 

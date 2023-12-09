@@ -155,7 +155,6 @@
 --   "mg979/vim-visual-multi",
 --   lazy = false,
 -- }
-
 -- DELETETHIS
 local M = {
   "L3MON4D3/LuaSnip",

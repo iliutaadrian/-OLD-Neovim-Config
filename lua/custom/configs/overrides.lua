@@ -8,6 +8,7 @@ M.treesitter = {
     "css",
     "javascript",
     "typescript",
+    "ruby",
     "tsx",
     "c",
     "rust",
@@ -15,7 +16,7 @@ M.treesitter = {
     "markdown_inline",
     "python",
     "json",
-    "yaml"
+    "yaml",
   },
   indent = {
     enable = true,
@@ -45,6 +46,11 @@ M.mason = {
 
     -- Rust stuff
     "rust-analyzer",
+
+    "rubocop",
+
+    "markdown",
+    "yaml-language-server",
 
     -- Shell stuff
     "shellcheck",

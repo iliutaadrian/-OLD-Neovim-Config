@@ -28,7 +28,6 @@ vim.g.vscode_snippets_path = "~/.config/nvim/lua/custom/snippets/json"
 vim.g.lua_snippets_path = "~/.config/nvim/lua/custom/snippets/lua"
 vim.g.snipmate_snippets_path = "~/.config/nvim/lua/custom/snippets/snipmate"
 
-
 --greatest remap ever
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -37,26 +36,35 @@ vim.keymap.set("n", "<C-i>", "{zz")
 vim.keymap.set("n", "<C-o>", "}zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 
--- Delete into void register 
-vim.keymap.set({"n", "v"}, "<leader>d", "dd")
-vim.keymap.set({"n", "v"}, "d", "\"_d")
+-- Delete into void register
+vim.keymap.set({ "n", "v" }, "<leader>d", "dd")
+vim.keymap.set({ "n", "v" }, "d", '"_d')
 -- vim.keymap.set({"n", "v"}, "dd", "V\"_d")
 
 -- Paste into new line
 vim.keymap.set("n", "<leader>p", "o<Esc>p")
 
 -- Python
-vim.api.nvim_set_keymap('n', '<leader>rp', ':w<CR>:!python3 %<CR>', { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>rp", ":w<CR>:!python3 %<CR>", { noremap = true })
 
 -- Codeium
 vim.g.codeium_filetypes = {
   python = false,
 }
-vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true })
-vim.keymap.set('i', '<c-[>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
-vim.keymap.set('i', '<c-]>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
-vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+vim.keymap.set("i", "<C-g>", function()
+  return vim.fn["codeium#Accept"]()
+end, { expr = true })
+vim.keymap.set("i", "<c-[>", function()
+  return vim.fn["codeium#CycleCompletions"](1)
+end, { expr = true })
+vim.keymap.set("i", "<c-]>", function()
+  return vim.fn["codeium#CycleCompletions"](-1)
+end, { expr = true })
+vim.keymap.set("i", "<c-x>", function()
+  return vim.fn["codeium#Clear"]()
+end, { expr = true })
 
 -- -- Remove terminal padding when inside nvim:
 ---- For st:
