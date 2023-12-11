@@ -31,6 +31,34 @@ M.general = {
       [[/<C-r><C-w><C-r><C-w><CR>]],
       "Search current word",
     },
+    ["<leader>mh"] = {
+      ":TmuxNavigateLeft<CR>",
+      "Tmux Navigate Left",
+    },
+    ["<leader>mj"] = {
+      ":TmuxNavigateDown<CR>",
+      "Tmux Navigate Down",
+    },
+    ["<leader>mk"] = {
+      ":TmuxNavigateUp<CR>",
+      "Tmux Navigate Up",
+    },
+    ["<leader>ml"] = {
+      ":TmuxNavigateRight<CR>",
+      "Tmux Navigate Right",
+    },
+    ["<leader>tn"] = {
+      ":tabn<CR>",
+      "Next Tab",
+    },
+    ["<leader>tp"] = {
+      ":tabp<CR>",
+      "Previous Tab",
+    },
+    ["<leader>tc"] = {
+      ":tabc<CR>",
+      "Close Tab",
+    },
   },
 }
 

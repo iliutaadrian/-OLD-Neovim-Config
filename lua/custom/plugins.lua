@@ -156,6 +156,10 @@ local plugins = {
   --   opts = require("custom.configs.copilot").opts,
   -- },
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "exafunction/codeium.vim",
     event = "BufEnter",
   },
